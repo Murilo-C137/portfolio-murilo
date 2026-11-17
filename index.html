@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Profissional - Murilo Rangel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body id="topo">
+
+  <header class="cabecalho">
+    <div class="container nav-container">
+      <p class="logo">Murilo<span>Rangel</span></p>
+
+      <button id="btn-menu" class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span class="hamburguer"></span>
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button id="btn-tema" type="button" class="btn-tema" aria-pressed="false">Modo Escuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="secao apresentacao">
+      <div class="apresentacao-texto">
+        <p class="destaque">DESENVOLVEDOR FRONT-END</p>
+        <h1>Olá! Meu nome é <span>Murilo Rangel</span></h1>
+        <p>
+          Estudante de Engenharia de Software na UCSAL. Atuo no desenvolvimento de interfaces web acessíveis,
+          responsivas e orientadas à experiência do usuário.
+        </p>
+        
+        <div id="bio-extra" class="bio-extra" hidden>
+          <p>
+            Minha trajetória inclui o estudo aprofundado de HTML semântico, arquitetura CSS flexível, JavaScript ES6+ e
+            manipulação de DOM. Busco oportunidades de estágio para aplicar boas práticas de desenvolvimento e evolução contínua.
+          </p>
+        </div>
+
+        <div class="botoes-apresentacao">
+          <a class="botao" href="#projetos">Conheça meus projetos</a>
+          <button id="btn-expandir-bio" type="button" class="botao-secundario" aria-expanded="false" aria-controls="bio-extra">
+            Saber mais sobre minha trajetória
+          </button>
+        </div>
+      </div>
+
+      <div class="personagem">
+        <img src="avatar.png" alt="Avatar de Murilo Ranggel">
+      </div>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <div class="sobre-texto">
+        <p class="destaque">QUEM SOU EU?</p>
+        <h2>Sobre mim</h2>
+        <p>
+          Atualmente no ensino superior, combino conhecimento teórico e prático para transformar requisitos
+          de software em aplicações funcionais, acessíveis e elegantes.
+        </p>
+      </div>
+      <div class="sobre-destaque">
+        <span class="simbolo"></></span>
+        <h3>Código limpo e acessível</h3>
+        <p>Foco na usabilidade, navegabilidade por teclado e conformidade com padrões web.</p>
+      </div>
+    </section>
+
+    <section id="conhecimentos" class="secao">
+      <p class="destaque">MINHA EVOLUÇÃO</p>
+      <h2>Conhecimentos</h2>
+      <div class="conhecimentos-layout">
+        <div class="lista-conhecimentos">
+          <h3>Habilidades Técnicas:</h3>
+          <ul>
+            <li>HTML5 Semântico e Acessibilidade (ARIA)</li>
+            <li>CSS3, Flexbox, Grid e Bootstrap 5</li>
+            <li>JavaScript (ES6+, DOM, Eventos)</li>
+            <li>Git, GitHub e Versionamento</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <p class="destaque">MEU TRABALHO</p>
+      <h2>Projetos</h2>
+
+      <div id="carrossel-projetos" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrossel-projetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrossel-projetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrossel-projetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner rounded-3">
+          <div class="carousel-item active">
+            <div class="slide-conteudo slide-1">
+              <h3>Destaque 01: Página Pessoal e Portfólio</h3>
+              <p>Arquitetura completa de front-end, layout responsivo e validação acessível.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="slide-conteudo slide-2">
+              <h3>Destaque 02: Aplicativo de Tarefas e Produtividade</h3>
+              <p>Prototipagem de interface mobile e lógica de gerenciamento de estado.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="slide-conteudo slide-3">
+              <h3>Destaque 03: Laboratório de DOM e Eventos</h3>
+              <p>Investigação prática sobre performance de seletores e delegação de eventos.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-projetos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel-projetos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+      
+      <div class="filtro-container">
+        <span id="label-filtro" class="filtro-label">Filtrar por categoria:</span>
+        <div class="filtro-botoes" role="group" aria-labelledby="label-filtro">
+          <button type="button" class="btn-filtro ativo" data-categoria="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="btn-filtro" data-categoria="web" aria-pressed="false">Web</button>
+          <button type="button" class="btn-filtro" data-categoria="mobile" aria-pressed="false">Mobile</button>
+        </div>
+      </div>
+
+      <p id="contador-projetos" class="contador-projetos" role="status" aria-live="polite">Exibindo todos os projetos.</p>
+
+      <div id="lista-projetos" class="cards">
+        <article class="card" data-categoria="web">
+          <div class="card-icone">01</div>
+          <h3>Página Pessoal e Portfólio</h3>
+          <p class="projeto-problema"><strong>Problema:</strong> Ausência de centralização de projetos e histórico profissional.</p>
+          <p class="projeto-contribuicao"><strong>Contribuição:</strong> Arquitetura completa de front-end, layout responsivo e validação acessível.</p>
+          <p class="tecnologias">HTML5 · CSS3 · JavaScript · Bootstrap</p>
+          <a class="botao-secundario" href="#contato">Ver detalhes</a>
+        </article>
+
+        <article class="card" data-categoria="mobile">
+          <div class="card-icone">02</div>
+          <h3>Aplicativo de Tarefas e Produtividade</h3>
+          <p class="projeto-problema"><strong>Problema:</strong> Necessidade de organização de rotina de estudos para alunos universitários.</p>
+          <p class="projeto-contribuicao"><strong>Contribuição:</strong> Prototipagem de interface mobile e lógica de gerenciamento de estado.</p>
+          <p class="tecnologias">JavaScript · Mobile First</p>
+          <a class="botao-secundario" href="#contato">Ver detalhes</a>
+        </article>
+
+        <article class="card" data-categoria="web">
+          <div class="card-icone">03</div>
+          <h3>Laboratório de DOM e Eventos</h3>
+          <p class="projeto-problema"><strong>Problema:</strong> Investigação prática sobre performance de seletores e delegação de eventos.</p>
+          <p class="projeto-contribuicao"><strong>Contribuição:</strong> Desenvolvimento de rotinas de manipulação dinâmica e testes no console.</p>
+          <p class="tecnologias">HTML5 · JavaScript ES6+</p>
+          <a class="botao-secundario" href="#contato">Ver detalhes</a>
+        </article>
+      </div>
+
+      <p id="mensagem-busca-vazia" class="mensagem-vazia oculto" role="status">Nenhum projeto encontrado para esta categoria.</p>
+    </section>
+
+    <section id="contato" class="secao">
+      <p class="destaque">VAMOS CONVERSAR</p>
+      <h2>Entre em contato</h2>
+
+      <div class="contato-layout">
+        <div class="contato-texto">
+          <h3>Canais Diretos</h3>
+          <p>Sinta-se à vontade para enviar uma mensagem sobre oportunidades ou projetos.</p>
+          <p><strong>E-mail real:</strong> murilo.rangel@ucsal.edu.br</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/murilo-rangel" target="_blank" rel="noopener">github.com/murilo-rangel</a></p>
+        </div>
+
+        <form id="form-contato" class="formulario" novalidate>
+          <div id="resumo-erros" class="resumo-erros oculto" tabindex="-1" role="alert" aria-live="assertive"></div>
+
+          <div class="campo">
+            <label for="campo-nome">Nome completo <span class="obrigatorio">*</span></label>
+            <input type="text" id="campo-nome" name="nome" required minlength="3" maxlength="80" aria-describedby="ajuda-nome erro-nome">
+            <small id="ajuda-nome" class="texto-ajuda">De 3 a 80 caracteres.</small>
+            <span id="erro-nome" class="mensagem-erro" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="campo-email">E-mail <span class="obrigatorio">*</span></label>
+            <input type="email" id="campo-email" name="email" required aria-describedby="ajuda-email erro-email">
+            <small id="ajuda-email" class="texto-ajuda">Informe um e-mail válido para retorno.</small>
+            <span id="erro-email" class="mensagem-erro" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="campo-motivo">Motivo do contato <span class="obrigatorio">*</span></label>
+            <select id="campo-motivo" name="motivo" required aria-describedby="erro-motivo">
+              <option value="">Selecione uma opção...</option>
+              <option value="profissional">Oportunidade profissional</option>
+              <option value="freelance">Projeto freelance</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span id="erro-motivo" class="mensagem-erro" aria-live="polite"></span>
+          </div>
+
+          <div id="container-assunto" class="campo oculto">
+            <label for="campo-assunto">Assunto adicional <span class="obrigatorio">*</span></label>
+            <input type="text" id="campo-assunto" name="assunto" minlength="5" maxlength="100" aria-describedby="ajuda-assunto erro-assunto">
+            <small id="ajuda-assunto" class="texto-ajuda">Obrigatório para "Outro" (5 a 100 caracteres).</small>
+            <span id="erro-assunto" class="mensagem-erro" aria-live="polite"></span>
+          </div>
+
+          <div class="campo">
+            <label for="campo-mensagem">Mensagem <span class="obrigatorio">*</span></label>
+            <textarea id="campo-mensagem" name="mensagem" rows="5" required minlength="30" maxlength="1000" aria-describedby="contador-mensagem erro-mensagem"></textarea>
+            <small id="contador-mensagem" class="texto-ajuda" aria-live="polite">0 / 1000 caracteres (mínimo de 30)</small>
+            <span id="erro-mensagem" class="mensagem-erro" aria-live="polite"></span>
+          </div>
+
+          <div class="campo-teste">
+            <label for="seletor-simulacao">Modo de demonstração de envio:</label>
+            <select id="seletor-simulacao">
+              <option value="sucesso">Simular Sucesso</option>
+              <option value="falha">Simular Falha de Conexão</option>
+            </select>
+          </div>
+
+          <button id="btn-enviar" class="botao" type="submit">Enviar mensagem</button>
+
+          <p id="status-envio" class="status-envio" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>© 2026 - Murilo Rangel. Todos os direitos reservados.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
